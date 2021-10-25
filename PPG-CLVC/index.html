@@ -5,10 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Demo</title>
   </head>
+  <style type="text/css">
+    table {
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    thead>tr>th:first-child {
+      width: 96px;
+    }
+
+    @media (max-width: 767px) {
+      .big-screen {
+        display: none;
+      }
+    }
+
+    @media (min-width: 767px) {
+      .small-screen {
+        display: none;
+      }
+    }
+  </style>
+
   <body>
     <h1>Audio Demo</h1>
     <audio controls>
       <source src="../audio/EJM01_ESPBOBAMA1_00003_V01_T01.wav" type="audio/wav">
     </audio>
+    <div class="row" id="result">
+        <div class="col-md-12">
+          <h2>Speech Samples</h2>
+                  <h4><small>Female → Female</small></h4>
+                  <div class="big-screen">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Source</th>
+                          <th>Target</th>
+                          <th>Ground Truth</th>
+                          <th>Original Model</th>
+                          <th>Proposed</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Sample 1</th>
+                          <td>
+                            <audio controls="">
+                              <source src="../audio/F2F/source.wav" type="audio/wav">
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls="">
+                              <source src="../audio/F2F/target.wav" type="audio/wav">
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls="">
+                              <source src="../audio/F2F/ground.wav" type="audio/wav">
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls="">
+                              <source src="../audio/F2F/original.wav" type="audio/wav">
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls="">
+                              <source src="../audio/F2F/LanEmb.wav" type="audio/wav">
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>
+                        </tr>
+                        <tr>
+ 
+        </div>
+      </div>
   </body>
 </html>
