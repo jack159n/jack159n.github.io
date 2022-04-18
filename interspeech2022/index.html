@@ -37,19 +37,21 @@
           <div class="col-md-16">
             <div><b>Authors:</b> Pin-Chieh Hsu, Nobuaki Minematsu, Daisuke Saito</div>
             <br>
+
             <div style="width: 100%">
               <b>Abstract:</b> In this work, we examine two methods for improving phonetic posteriorgram (PPG) based cross-lingual voice conversion (CLVC). Previous research usually utilized a speaker encoder to characterize speakers' identity; however, the speaker embedding learned by the previous model tends to be language-dependent, degrading the performance of converted speeches. Therefore, we propose using the technique of domain-adversarial training. With this approach, the speaker embedding in different languages can be adapted into the same distribution to form a language-independent speaker embedding space. The other approach we propose is to employ external language conditioning to support our model to disentangle the language information from the speaker embedding. In our experiments, both methods are objectively evaluated on a Japanese-English bilingual database. Two automatic objective assessment systems are adopted to assess the quality and speaker similarity of converted utterances. According to the experimental results, the two methods can generate speaker embedding with reduced language dependency and improve the naturalness and speaker similarity of converted speeches.
             </div>
             <br>
+
             <h2>Models</h2>
             <div>
             <h3><small>Baseline: PPG-CLVC</samll></h3>
-              <img id="img1" src="./figure/PPG_CLVC.drawio.png" class="img-fluid" style="width:100%">
+              <img id="img1" src="./figure/PPG_CLVC.drawio.png" class="img-fluid" style="width:90%">
               <figcaption class="figure-caption text-center">
               Figure 1. The conventional framework of PPG-based CLVC
             </div>
             <br>
-            
+
             <table class="table">
               <tr>
                 <th><h3><small>Proposal 1: DAT-PPG-CLVC</samll></h3></th>
@@ -58,18 +60,18 @@
               <tr>
                 <td>
                   <img id="img2" src="./figure/DAT.drawio.png" class="img-fluid" style="width:80%">
-                  <!-- <figcaption class="figure-caption text-center">
-                  Figure 2. The proposed framework of the conversion model in PPG-based CLVC with the domain adversarial training technique during the training phase.-->
+                  <figcaption class="figure-caption text-center">
+                  Figure 2. The proposed framework of the conversion model in PPG-based CLVC with the domain adversarial training technique during the training phase.
                 </td>
                 <td>
                   <img id="img3" src="./figure/LAN-CLVC.png" class="img-fluid" style="width:100%">
-                   <!-- <figcaption class="figure-caption text-center">
-                  Figure 3. The proposed framework, PPG-based CLVC with language conditioning mechanism.-->
+                  <figcaption class="figure-caption text-center">
+                  Figure 3. The proposed framework, PPG-based CLVC with language conditioning mechanism.
                 </td>
               </tr>
             </table>
-            
             <br>
+
             <h2>Speech Samples</h2>
             <h3><small>Female → Female</samll></h3>
               <table class="table">
